@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Meru National Polytechnic Journal</title>
+<!-- Bootstrap -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+<!-- start slider -->
+<link href="{% static 'css/slider.css' %}" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="{% static 'js/modernizr.custom.28468.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.cslider.js' %}"></script>
+	<script type="text/javascript">
+			$(function() {
+
+				$('#da-slider').cslider({
+					autoplay : true,
+					bgincrement : 450
+				});
+
+			});
+		</script>
+<!-- Owl Carousel Assets -->
+<link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+		<script>
+			$(document).ready(function() {
+
+				$("#owl-demo").owlCarousel({
+					items : 4,
+					lazyLoad : true,
+					autoPlay : true,
+					navigation : true,
+					navigationText : ["", ""],
+					rewindNav : false,
+					scrollPerPage : false,
+					pagination : false,
+					paginationNumbers : false,
+				});
+
+			});
+		</script>
+		<!-- //Owl Carousel Assets -->
+<!----font-Awesome----->
+   	<link rel="stylesheet" href="{% static 'fonts/css/font-awesome.min.css' %}">
+<!----font-Awesome----->
+</head>
+<body>
+<div class="header_bg">
+<div class="container">
+	<div class="row header">
+		<div class="logo navbar-left">
+			<h1><a href="{% url 'journal' %}">Journal </a></h1>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<div class="container">
+	<div class="row h_menu">
+		<nav class="navbar navbar-default navbar-left" role="navigation">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'journal' %}">Journal</a></li>
+		        <li class="active"><a href="{% url 'about' %}">About Us</a></li>	        
+		        <li><a href="{% url 'contact' %}">Contact</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		    <!-- start soc_icons -->
+		</nav>
+		<div class="soc_icons navbar-right">
+			<ul class="list-unstyled text-center">
+				<li><a href="https://twitter.com/MeruNPRFTI?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://web.facebook.com/merupoly"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCoHIvGKEExU2G3bxKyBaugw"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			</ul>	
+		</div>
+	</div>
+</div>
+<div class="slider_bg"><!-- start slider -->
+	<div class="container">
+		<div id="da-slider" class="da-slider text-center">
+			<div class="da-slide">
+				<h2>Our Vision</h2>
+				<p>To be an international center of excellence in Technical and Vocational Education and Training (TVET).<span class="hide_text"> </span></p>
+			</div>
+			<div class="da-slide">
+				<h2>Our Mission</h2>
+				<p>To provide Technical and Vocational Education and Training (TVET) for producing dependable skilled human resources for commerce and industry<span class="hide_text">.</span></p>
+				
+			</div>
+			<div class="da-slide">
+				<h2>MOTTO: </h2>
+				<p>Technology for Innovation and Development.<span class="hide_text"></span></p>
+				
+			</div>
+			
+	   </div>
+	</div>
+</div><!-- end slider -->
+<!-- end main -->
+<div class="main_btm"><!-- start main_btm -->
+	<div class="container">
+		<div class="main row">
+			<div class="col-md-8 content_right">
+				<h4>The Meru National Polytechnic <span>Our History </span> </h4>
+				<p class="para">The Meru National Polytechnic (MNP) is located in Meru County along Meru-Nanyuki highway, about 10 km  from Meru Town and less than 5 km from Makutano Centre. 
+
+					The Meru National Polytechnic was upgraded from Meru Technical Training Institute in 2016 and has been in operation since 1956 when it was started by the Meru County Council to train the youth in various practical skills. It was then known as Gitoro Technical. In 1964, the school was handed over to the regional education office and it became Meru Technical School, offering two-year duration courses.
+					
+					In 1969 the school was upgraded to a technical vocational Training school and the course duration extended to three years. In the same year, the first form one students were admitted to be prepared for KJSE(Kenya Junior Secondary School Examination) Technical at the end of two years. Those who passed and wished to continue to form three and four were transferred to MIOME (Mombasa Institute of Muslim Education) the present day Mombasa Polytechnic. Those who remained were for further one year before joining the labor market.
+					
+					In 1973, the school was once more upgraded to a Technical secondary school and the terminal examination became East African Certificate of Education. In 1985 the secondary cycle started being phased out so that it became a Technical Training Institute in May 1986. It admitted the first artisan students and ACNC (Accounts clerk National Certificate), students
+					
+					The first craft students were admitted in 1997 and the first CPA students were admitted in 1988. In 1997, the first diploma students were admitted. At present, the Polytechnic offers 3 Higher Diploma Courses, more than 25 Diploma courses, 31 Craft courses, 6 Artisan courses. Currently, the Polytechnic has 225 Teaching Staff Member and 125 Non-Teaching Staff Members, and a student Population of about 8,000 students.
+					
+					 </p>
+			
+			</div>
+		</div>
+				<!----start-img-cursual---->
+				<h4> <span>Our Staff </span> </h4>
+					<div id="owl-demo" class="owl-carousel text-center">
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c1.jpg" alt="to be edited soon ">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Prof</a></h4>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="cau_left">
+								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
+							</div>
+							<div class="cau_left">
+								<h4><a href="#">Dr.</a></h4>
+								<p>
+									
+								</p>
+							</div>
+						</div>
+						
+						
+					</div>
+					<!----//End-img-cursual---->
+	</div>
+</div>
+<div class="footer_bg"><!-- start footer -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p class="link"><span>&#169; All rights reserved | 2022<a href="http://www.merunationalpolytechnic.ac.ke/index.php"> The Meru National Polytechnic</a></span></p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
